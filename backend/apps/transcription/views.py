@@ -12,7 +12,6 @@ import sys
 from ...settings import PROJECT_ROOT
 from ..authentication import views
 
-# TODO: remove after testing
 dirname = os.path.dirname(__file__)
 filename = os.path.join(
     dirname, '{0}\\speechex\\google-speech-to-text-api-credentials.json'.format(PROJECT_ROOT))
@@ -42,9 +41,6 @@ class Transcriptor:
                 {
                     "errors": err
                 }), status=status.HTTP_401_UNAUTHORIZED)
-
-        # REMOVE TEMP
-        # return Response(data={'text': "1 2 3"})
 
         err = None
 

@@ -1,0 +1,75 @@
+{
+  "name": "speechex",
+  "version": "1.0.0",
+  "description": "A simple speech to text web application that allows logged in users to record a voice message and transcribe it to text",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.dev.js --port 8080",
+    "clean:build": "rimraf static && mkdir static",
+    "prebuild": "run-p clean:build",
+    "build": "webpack --config webpack.config.prod.js",
+    "postbuild": "rimraf static/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apopovidis/speechex.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "bootstrap",
+    "python",
+    "django",
+    "jwt",
+    "google",
+    "speech-to-text"
+  ],
+  "author": "AP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apopovidis/speechex/issues"
+  },
+  "homepage": "https://github.com/apopovidis/speechex#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0",
+    "extendable-media-recorder": "^6.3.4",
+    "extendable-media-recorder-wav-encoder": "^7.0.56",
+    "md5": "^2.3.0",
+    "package.json": "^2.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^3.0.0",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.7.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

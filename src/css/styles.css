@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#091022, #7c339c);
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.transcription-container {
+    padding: 1em;
+}
+
+@media (min-width: 415px) {
+    .transcription-container {
+        width:40%;
+        padding: 6em
+    }
+}
+
+@media (min-width: 768px) {
+    .transcription-container {
+        width:70%;
+        padding: 6em
+    }
+}
+
+.result {
+    text-align: center;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px 100px 50px 100px
+}
+
+.bi-mic-on {
+    color: yellow;
+}
+
+.bi-mic-off {
+    color: white;
+}
+
+.bi-mic-on,
+.bi-mic-off {
+    cursor: pointer;
+    font-size: 4em;
+}
+
+.bi-soundwave-on {
+    color: yellow;
+}
+
+.bi-soundwave-off {
+    color: white;
+}
+
+.bi-soundwave-on,
+.bi-soundwave-off {
+    font-size: 4em;
+}
+
+.login-container {
+    padding: 1em;
+}
+
+@media (min-width: 415px) {
+    .login-container {
+        width:70%;
+        padding: 6em
+    }
+}
